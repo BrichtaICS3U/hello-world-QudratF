@@ -10,8 +10,9 @@
 
 def heron(x, accuracy=0.001):
   """Compute the square root of the number x using Heron's method. The accuracy is defaulted to three decimal places, but you
-  can use a larger or smaller number if you wish. The smaller the number, the more time the calculation will take."""
+  can use a larger or smaller number if you wish. The smaller the number,  the more time the calculation will take."""
   G = x/2
     while absol(G**2)-x>= accuracy:
         G = (G + x/G)/2
     return round(G,3)
+#DONE
